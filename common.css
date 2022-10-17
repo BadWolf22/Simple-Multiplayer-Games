@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     background-color: rgb(51, 51, 51);
     width: 100vw;
     height: 100vh;
@@ -32,28 +33,57 @@ html, body {
     aspect-ratio: 1;
     max-height: calc(80vh / 3);
     max-width: calc(80vh / 3);
-    background-color:rgb(51, 51, 51);
+    background-color: rgb(51, 51, 51);
+}
+
+.x {
+    mask-image: url(images/x.svg);
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    mask-type: alpha;
+    -webkit-mask-image: url(images/x.svg);
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    -webkit-mask-type: alpha;
+}
+
+.o {
+    mask-image: url(images/o.svg);
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    -webkit-mask-image: url(images/o.svg);
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
 }
 
 .space:hover {
-    background-color:rgb(61, 61, 61);
+    background-color: rgb(61, 61, 61);
 }
 
 .row1 {
     grid-row-start: r1;
 }
+
 .row2 {
     grid-row-start: r2;
 }
+
 .row3 {
     grid-row-start: r3;
 }
+
 .col1 {
     grid-column-start: c1;
 }
+
 .col2 {
     grid-column-start: c2;
 }
+
 .col3 {
     grid-column-start: c3;
 }
@@ -61,7 +91,9 @@ html, body {
 @keyframes bgMove {
     from {
         /* background-image: linear-gradient(#77A0A9, #ED254E, #F9DC5C); */
-    } to {
+    }
+
+    to {
         /* background-image: linear-gradient(#F9DC5C, #ED254E, #77A0A9); */
     }
 }
