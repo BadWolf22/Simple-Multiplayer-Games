@@ -35,6 +35,10 @@ html, body {
     background-color:rgb(51, 51, 51);
 }
 
+.space:hover {
+    background-color:rgb(61, 61, 61);
+}
+
 .row1 {
     grid-row-start: r1;
 }
