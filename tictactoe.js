@@ -11,6 +11,11 @@ function makeMove(elem) {
     elem.classList.add("used"); // Mark cell as used
     if (turn == X) elem.classList.add("x");// Place X/O here
     if (turn == O) elem.classList.add("o");// Place X/O here
+    // We only need to check current row, column, and diagonal(s) for a win
+    for (let curClass of elem.classList) {
+        if (!(curClass.includes("row") || curClass.includes("col") || curClass.includes("diag"))) continue;
+        let elems = document.querySelectorAll(`.${curClass}.${turn==X?"x":"o"}`);
+        if (elems.length == 3) alert("Win!");
+    }
     turn = !turn;
-    // TODO: Check for win
 }
