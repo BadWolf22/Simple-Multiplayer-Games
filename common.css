@@ -8,18 +8,15 @@ body {
 }
 
 .tictactoe {
-    background-image: linear-gradient(#77A0A9, #ED254E, #F9DC5C, #ED254E, #77A0A9);
-    background-attachment: fixed;
-    /* animation: bgMove 5s infinite; */
-    /* background-position: center; */
+    /* https://codepen.io/P1N2O/pen/pyBNzX */
+    background-image: linear-gradient(-45deg, #77A0A9, #ED254E, #F9DC5C, #ED254E, #77A0A9);
+    background-size: 200% 200%;
+    /* background-attachment: fixed; */
+    animation: bgMove 15s ease-in-out infinite;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    /* left:10%;
-    right: 10%;
-    top: 10%;
-    bottom: 10%; */
     width: min(80vh, 80vw);
     height: min(80vh, 80vw);
     display: grid;
@@ -89,11 +86,15 @@ body {
 }
 
 @keyframes bgMove {
-    from {
-        /* background-image: linear-gradient(#77A0A9, #ED254E, #F9DC5C); */
+    0% {
+        background-position: 0% 50%;
     }
 
-    to {
-        /* background-image: linear-gradient(#F9DC5C, #ED254E, #77A0A9); */
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
     }
 }
