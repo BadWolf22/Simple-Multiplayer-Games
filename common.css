@@ -60,7 +60,7 @@ body {
     -webkit-mask-size: cover;
 }
 
-.space:hover {
+.space:hover:not(.used) {
     background-color: rgb(61, 61, 61);
 }
 
