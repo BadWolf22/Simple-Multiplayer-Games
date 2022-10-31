@@ -22,8 +22,8 @@ body {
     display: grid;
     grid-template-rows: [r1] 1fr [r2] 1fr [r3] 1fr;
     grid-template-columns: [c1] 1fr [c2] 1fr [c3] 1fr;
-    /* place-content: center; */
     gap: 10px 10px;
+    backdrop-filter: blur(10px);
 }
 
 .space {
@@ -58,7 +58,7 @@ body {
 }
 
 .space:hover:not(.used) {
-    background-color: rgb(61, 61, 61);
+    background-color: rgba(61, 61, 61, 0.5);
 }
 
 .row1 {
