@@ -1,5 +1,5 @@
 # Simple-Multiplayer-Games
-Tic-Tac-Toe, Ultimate Tic-Tac-Toe, True Tic-Tac-Toe, Chess, 3D Chess, 
+Tic-Tac-Toe, Ultimate Tic-Tac-Toe, True Tic-Tac-Toe, Chess, 3D Chess, Custom Pieces Chess
 
 ## Todo (Tic-Tac-Toe)
 - [ ] Keyboard controls  
