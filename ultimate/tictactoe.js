@@ -50,7 +50,10 @@ document.querySelectorAll(".tictactoe>.space").forEach(elem => {
         let rowCol = Array.from(elem.classList).filter(word => {
             return word.includes("row") || word.includes("col");
         });
-        elem.parentElement.parentElement.querySelector(`:scope > .${rowCol.join(".")}`).classList.add("previewed");
+        let target = elem.parentElement.parentElement.querySelector(`:scope > .${rowCol.join(".")}`);
+        let targetIsUsed = target.classList.contains("used");
+        if (!targetIsUsed) target.classList.add("previewed");
+        else target.parentElement.querySelectorAll(":scope > .space:not(.used)").forEach(e => e.classList.add("previewed"));
         elem.classList.add(`${turn == X ? "x" : "o"}`);
     });
     elem.addEventListener("mouseleave", (ev) => {
@@ -58,7 +61,8 @@ document.querySelectorAll(".tictactoe>.space").forEach(elem => {
         let rowCol = Array.from(elem.classList).filter(word => {
             return word.includes("row") || word.includes("col");
         });
-        elem.parentElement.parentElement.querySelector(`:scope > .${rowCol.join(".")}`).classList.remove("previewed");
+        // let target = elem.parentElement.parentElement.querySelector(`:scope > .${rowCol.join(".")}`)
+        elem.parentElement.parentElement.querySelectorAll(":scope > .space:not(.used)").forEach(e => e.classList.remove("previewed"));
         elem.classList.remove(`${turn == X ? "x" : "o"}`);
     });
 });
