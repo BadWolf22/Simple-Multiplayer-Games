@@ -34,12 +34,12 @@ body {
 }
 
 .x {
-    mask-image: url(images/x.svg);
+    mask-image: url(/images/x.svg);
     mask-position: center;
     mask-repeat: no-repeat;
     mask-size: cover;
     mask-type: alpha;
-    -webkit-mask-image: url(images/x.svg);
+    -webkit-mask-image: url(/images/x.svg);
     -webkit-mask-position: center;
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-size: cover;
@@ -47,11 +47,11 @@ body {
 }
 
 .o {
-    mask-image: url(images/o.svg);
+    mask-image: url(/images/o.svg);
     mask-position: center;
     mask-repeat: no-repeat;
     mask-size: cover;
-    -webkit-mask-image: url(images/o.svg);
+    -webkit-mask-image: url(/images/o.svg);
     -webkit-mask-position: center;
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-size: cover;

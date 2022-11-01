@@ -1,0 +1,123 @@
+html,
+body {
+    background-color: rgb(51, 51, 51);
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.ultimate {
+    /* https://codepen.io/P1N2O/pen/pyBNzX */
+    background-image: linear-gradient(-60deg, #77A0A9, #ED254E, #F9DC5C, #ED254E, #77A0A9);
+    background-size: 200% 200%;
+    /* background-attachment: fixed; */
+    animation: bgMove 15s ease-in-out infinite;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: min(80vh, 80vw);
+    height: min(80vh, 80vw);
+    display: grid;
+    grid-template-rows: [r1] 1fr [r2] 1fr [r3] 1fr;
+    grid-template-columns: [c1] 1fr [c2] 1fr [c3] 1fr;
+    gap: 15px 15px;
+    backdrop-filter: blur(10px);
+}
+
+.tictactoe {
+    /* background-color: rgb(51, 51, 51); */
+    display: grid;
+    grid-template-rows: [r1] 1fr [r2] 1fr [r3] 1fr;
+    grid-template-columns: [c1] 1fr [c2] 1fr [c3] 1fr;
+    gap: 5px 5px;
+}
+
+.space {
+    aspect-ratio: 1;
+    max-height: calc(80vh / 3);
+    max-width: calc(80vh / 3);
+    background-color: rgb(51, 51, 51);
+}
+
+.x:not(.showMoves) {
+    /* TODO: Choose better colors */
+    background-color: rgb(51, 51, 151);
+    mask-image: url(/images/x.svg);
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    mask-type: alpha;
+    -webkit-mask-image: url(/images/x.svg);
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    -webkit-mask-type: alpha;
+}
+
+.o:not(.showMoves) {
+    /* TODO: Choose better colors */
+    background-color: rgb(51, 151, 51);
+    mask-image: url(/images/o.svg);
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    -webkit-mask-image: url(/images/o.svg);
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+}
+
+.space:hover:not(.used):not(.deactivated) {
+    background-color: rgba(61, 61, 61, 0.5);
+}
+
+.space.previewed, .space.activated {
+    background-color: rgba(61, 61, 61, 0.5);
+}
+
+.row1 {
+    grid-row-start: r1;
+}
+
+.row2 {
+    grid-row-start: r2;
+}
+
+.row3 {
+    grid-row-start: r3;
+}
+
+.col1 {
+    grid-column-start: c1;
+}
+
+.col2 {
+    grid-column-start: c2;
+}
+
+.col3 {
+    grid-column-start: c3;
+}
+
+@keyframes bgMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.hidden {
+    visibility: hidden;
+    display: none;
+    opacity: 0;
+    /* transition: visibility 0s 2s, opacity 2s linear; */
+}

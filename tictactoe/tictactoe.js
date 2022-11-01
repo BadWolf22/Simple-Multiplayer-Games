@@ -14,13 +14,13 @@ function makeMove(elem) {
     // We only need to check current row, column, and diagonal(s) for a win
     for (let curClass of elem.classList) {
         if (!(curClass.includes("row") || curClass.includes("col") || curClass.includes("diag"))) continue;
-        let elems = document.querySelectorAll(`.${curClass}.${turn == X ? "x" : "o"}`);
+        let elems = elem.parentElement.querySelectorAll(`.${curClass}.${turn == X ? "x" : "o"}`);
         if (elems.length == 3) {
             // alert("Win!");
-            document.querySelectorAll(".space").forEach(space => {
+            elem.parentElement.querySelectorAll(".space").forEach(space => {
                 space.classList.add("hidden");
             });
-            document.querySelector(".tictactoe").classList.add("used", `${turn==X?"x":"o"}`);
+            elem.parentElement.classList.add("used", `${turn==X?"x":"o"}`);
         }
     }
     turn = !turn;
