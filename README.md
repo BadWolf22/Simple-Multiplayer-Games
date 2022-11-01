@@ -2,10 +2,14 @@
 Tic-Tac-Toe, Ultimate Tic-Tac-Toe, True Tic-Tac-Toe, Chess, 3D Chess, 
 
 ## Todo (Tic-Tac-Toe)
-- TODO: Keyboard controls  
-- TODO: Settings [reset, theme/colors, anims, etc.]  
-- TODO: Multiplayer  
-- TODO: AI [multiple difficulties]  
+- [ ] Keyboard controls  
+- [ ] Mobile tap to preview (tap again to confirm)
+- [ ] Settings [reset, theme/colors, anims, etc.]  
+- [ ] Multiplayer  
+- [ ] AI [multiple difficulties]  
+- [ ] Save-state
+- [ ] Generalizable depth
+- [ ] Zooming for
 
 # I lied, they're not all multiplayer
 Pacman, Asteroids, Lunar Lander, Soduku, Minesweeper
