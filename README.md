@@ -1,5 +1,5 @@
 # Simple-Multiplayer-Games
-Tic-Tac-Toe, Ultimate Tic-Tac-Toe, True Tic-Tac-Toe, Chess, 3D Chess, Custom Pieces Chess
+Tic-Tac-Toe, Ultimate Tic-Tac-Toe, True Tic-Tac-Toe, Chess, 3D Chess, Custom Pieces Chess, TetrisVs?
 
 ## Todo (Tic-Tac-Toe)
 - [ ] Keyboard controls  
@@ -12,4 +12,4 @@ Tic-Tac-Toe, Ultimate Tic-Tac-Toe, True Tic-Tac-Toe, Chess, 3D Chess, Custom Pie
 - [ ] Zooming for
 
 # I lied, they're not all multiplayer
-Pacman, Asteroids, Lunar Lander, Soduku, Minesweeper
+Pacman, Asteroids, Lunar Lander, Soduku, Minesweeper, Tetris
