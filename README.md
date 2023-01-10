@@ -12,4 +12,4 @@ Tic-Tac-Toe, Ultimate Tic-Tac-Toe, True Tic-Tac-Toe, Chess, 3D Chess, Custom Pie
 - [ ] Zooming for
 
 # I lied, they're not all multiplayer
-Pacman, Asteroids, Lunar Lander, Soduku, Minesweeper, Tetris
+Pac-Man, Asteroids, Lunar Lander, Soduku, Minesweeper, Snake, Tetris
